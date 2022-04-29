@@ -2,6 +2,8 @@
 
 This project uses Spotify API with Node.js to generate a Lollapalooza lineup with the most listened artists of the user. The user can print or download the lineup and share on your social medias.
 
+NOTE: This code is admittedly not super clean so sorry in advance! When I have time, I hope to refactor & clean this up though :) 
+
 ## Installation
 
 These examples run on Node.js. On [its website](http://www.nodejs.org/download/) you can find instructions on how to install it. You can also follow [this gist](https://gist.github.com/isaacs/579814) for a quick and easy way to install Node.js and npm.
