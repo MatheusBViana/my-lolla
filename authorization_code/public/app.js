@@ -4,10 +4,10 @@ var request = require('request'); // "Request" library
 var cors = require('cors');
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
-var client_id =  // Your client id
-var client_secret =  // Your secret
-var redirect_uri = // Your redirect uri
-var meu_token = // Your token
+var client_id =  ""// Your client id
+var client_secret = ""  // Your secret
+var redirect_uri = ""// Your redirect uri
+var meu_token = "" // Your token
 
 /**
  * Generates a random string containing numbers and letters
