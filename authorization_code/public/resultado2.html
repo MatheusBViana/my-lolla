@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=0.5">
+    <title>My Lolla</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <!-- <link href="style.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="styles.css">
+
+    
+</head>
+
+<body onload=bolinhas()>
+
+    <div id="loading">
+        <h1>My Lollapalooza</h1>
+        <span id="text_loading">...generating...</span>
+    </div>
+    
+    <div id="aviso">
+        Sorry, you don't have enough listened artists :( <br>
+        Listen to more artists and try again later :)
+    </div>
+    
+    <div class="escondida" id="referencia">
+        <div class="content">
+
+            <div id="tamanho"><%= tamanho %></div>
+                <div class="featured-artists" id="podio">
+                    <span id="i0"><%= artistas[0] %></span>
+                    <span id="i1"><%= artistas[1] %></span>
+                </div>
+                <div id="i2"><span><%= artistas[2] %></span></div>
+                <div id="i3"><span><%= artistas[3] %></span></div>
+                <div id="i4"><span><%= artistas[4] %></span></div>
+                <div id="i5"><span><%= artistas[5] %></span></div>
+                <div id="i6"><span><%= artistas[6] %></span></div>
+                <div id="i7"><span><%= artistas[7] %></span></div>
+                <div id="i8"><span><%= artistas[8] %></span></div>
+                <div id="i9"><span><%= artistas[9] %></span></div>
+                <div id="i10"><span><%= artistas[10] %></span></div>
+                <div id="i11"><span><%= artistas[11] %></span></div>
+                <div id="i12"><span><%= artistas[12] %></span></div>
+                <div id="i13"><span><%= artistas[13] %></span></div>
+                <div id="i14"><span><%= artistas[14] %></span></div>
+                <div id="i15"><span><%= artistas[15] %></span></div>
+                <div id="i16"><span><%= artistas[16] %></span></div>
+                <div id="i17"><span><%= artistas[17] %></span></div>
+                <div id="i18"><span><%= artistas[18] %></span></div>
+                <div id="i19"><span><%= artistas[19] %></span></div>
+        </div>
+    </div>
+
+    <div class="card" id="salvar">
+        <div class='content' id="tapete">
+            <div class="featured-artists" id="podio">
+                <span id="top0"></span>
+                <span id="top1"></span>
+            </div>
+        </div>  
+    </div>
+       
+    <div class="button">
+        <button id="download">Download</button>
+    </div>
+    
+    <div class="copyrights">
+        <h3>Developed by: Matheus Bermudes Viana</h3>
+    </div>
+    <div class="redes">
+        <ul class="list-inline">
+          <li class="text-center netw">
+            <a href="https://www.linkedin.com/in/matheus-bermudes-viana-b1a9b4145/">
+              <img class="logorede" src="images/linkedin.png">
+            </a>
+          </li>
+          <li class="text-center netw">
+            <a href="https://twitter.com/mbermudesv">
+              <img class="logorede twitter" src="images/twitter.png">
+            </a>
+          </li>
+          <li class="text-center netw">
+            <a href="https://www.instagram.com/matheus_bermudes/">
+              <img class="logorede" src="images/insta.png">
+            </a>
+          </li>
+          <li class="text-center netw">
+            <a href="https://github.com/MatheusBViana/">
+              <img class="logorede git" src="images/github.png">
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li class="text-center codpix">
+            <a>
+              <img class="barcode" src="images/barcode.png">
+              <img class="imgpix" src="https://logospng.org/download/pix/logo-pix-icone-512.png">
+            </a>
+          </li>
+          <li class="text-center paypal">
+            <a href="https://www.paypal.com/donate/?business=57DEF45MCL74Y&no_recurring=1&item_name=Buy+me+a+coffee?&currency_code=USD">
+              <img src="images/paypal.png">
+            </a>
+          </li>
+        </ul>
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+<script src="http://cdn.jsdelivr.net/g/filesaver.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<script src="script.js"></script>
+</html>

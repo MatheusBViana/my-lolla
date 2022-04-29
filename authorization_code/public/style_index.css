@@ -1,0 +1,185 @@
+#obtain-new-token{
+    display: none;
+  }
+  .text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 500px;
+  }
+ 
+  body{
+  background-color: rgb(149, 105, 140);
+  background-image: url("images/loading.png");
+  background-repeat: round;
+  background-size: 100% 80%;
+  background-attachment: fixed;
+
+  /* background-size: auto; */
+  width: 100vw;
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 50vw;
+  /* max-height: 100vw; */
+  overflow-x: hidden;
+  overflow-y: auto;
+    color: white;
+  }
+  
+  #login{
+    text-align: center;
+  }
+
+  #login a{
+    text-decoration: none ;
+    border-radius: 10px;
+    margin: 20px auto 0px;
+    padding: 15px 20px;
+    height: 65px;
+    width: 155px;
+    color: white;
+    background-color: #7e183a;
+  border: 3px white solid;
+
+    
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+  }
+
+  #login a:hover{
+    background-color: white;
+  color: #7e183a;
+  border: 3px #7e183a solid;
+  }
+  
+  #login h1{
+    width: 40%;
+    font-family: helvetica;
+    margin: 60px auto 70px;
+  }
+
+  .cabecalho{
+    margin-top: 80px;
+    text-align: center;
+  }
+  .cabecalho h1{
+    font-family: helvetica, arial, sans-serif;
+    font-size: 50px;
+    margin-bottom: -20px;
+  }
+  .cabecalho h2{
+    font-family: helvetica, arial, sans-serif;
+    font-size: 35px;
+  }
+
+  .copyrights{
+    text-align: center;
+    /* margin-top: 240px; */
+    margin-top: 8%;
+    font-size: 20px;
+    font-family: helvetica, arial, sans-serif;
+  }
+  @media (max-width: 1024px) {
+    body{
+      background-repeat: no-repeat;
+      background-size: auto;
+      /* font-size: 30px; */
+    }
+
+    .cabecalho{
+      margin-top: 200px;
+    }
+  }
+  
+  
+  .netw{
+    display: inline-block;
+    margin: -10px 2% 0 0;
+      font-family: 'Poppins', sans-serif;
+      list-style-type: none;
+      transition: scale 0.2s;
+  }
+
+  li{
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    transition: scale 0.2s;
+  }
+  /* Destacar as redes sociais quando eu colocar o mouse por cima */
+  li:hover{
+      transform: scale(1.2);
+      font-weight: bold;
+  }
+  
+  .logorede{
+      width: 60px;
+      height: 60px;
+      /* margin: 0 5px 0; */
+      /* display: flex; */
+      filter: brightness(100);
+      border-radius: 5px;
+  }
+  .redes{
+      padding: 10px;
+      color: white;    
+      /* width: 45%; */
+      height: 150px;
+      margin: 0 auto 15px;
+      border-radius: 20px;
+      text-align: center;
+
+   }
+   .redes a{
+     color: white;
+   }
+    .git{  
+      filter: invert(1);  
+    }
+
+   .twitter{
+     width: 52px;
+     height: 52px;
+     border: 4px solid white;
+     border-radius: 15px;
+   }
+   
+   .codpix{
+     width: 200px;
+     height: 100px;
+     margin-top: 2%;
+     
+    }
+    .paypal{
+     width: 200px;
+     height: 70px;
+   }
+
+   .imgpix{
+    margin-left: -15%;
+
+     width: 70px;
+     filter: brightness(0) invert(1);
+    }
+ 
+    .paypal img{
+      margin-left: -35%;
+     width: 150px;
+     filter: brightness(0) invert(1);
+    }
+
+    
+    .barcode{
+      position: absolute;
+      left: 30%;
+      bottom: 4%;
+      display: none;
+      width: 200px;
+      border: 2px solid white;
+      margin: 0;
+    }
+
+    .codpix:hover .barcode{
+      display: block;
+      left: -90%;
+    }

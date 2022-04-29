@@ -1,0 +1,388 @@
+
+body{
+    background-image: url("images/loading.png");
+
+    background-repeat: round;
+    background-size: auto;
+    background-attachment: fixed;
+    width: 100vw;
+    min-width: 100vw;
+    max-width: 100vw;
+    min-height: 90vw;
+    max-height: 150vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+@font-face {
+    font-family: 'untitled1regular';
+    src: url('untitled2-webfont.woff2') format('woff2'),
+         url('untitled2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'untitled1regular';
+    src: url('Untitled2.ttf') format('truetype');
+}
+
+h2{
+    text-align: center;
+    margin-bottom: -10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.button{
+    text-align: center;
+    margin-top: -180px;
+    margin-bottom: 50px;
+}
+
+#download{
+    border: 3px white solid;
+    border-radius: 10px;
+    padding: 13px 15px 20px;
+    height: 65px;
+    width: 155px;
+    background-color: #7e183a;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    margin-top: 180px;
+}
+
+#download:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #7e183a;
+    border: 3px #7e183a solid;
+}
+
+.copyrights{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: helvetica, arial, sans-serif;
+}
+    
+@media only screen and (max-width:767px){
+    .copyrights{
+        margin-top: 13%;
+    }
+}
+    
+.netw{
+    display: inline-block;
+    margin: -10px 2% 0 0;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    transition: scale 0.2s;
+}
+
+ul{
+    margin-left: -10px;
+}
+
+li{
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    transition: scale 0.2s;
+}
+
+/* Destacar as redes sociais quando eu colocar o mouse por cima */
+li:hover{
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+.logorede{
+    width: 60px;
+    height: 60px;
+    filter: brightness(100);
+    border-radius: 5px;
+}
+
+.redes{
+    padding: 10px;
+    color: white;    
+    /* width: 45%; */
+    height: 150px;
+    margin: 0 auto 15px ;
+    border-radius: 20px;
+    text-align: center;
+}
+.redes a{
+    color: white;
+}
+
+.twitter{
+    width: 52px;
+    height: 52px;
+    border: 4px solid white;
+    border-radius: 15px;
+}
+
+.git{
+    filter: invert(1);
+}
+
+.codpix{
+    width: 200px;
+    height: 100px;
+    margin-top: 2%;
+}
+
+.paypal{
+    width: 200px;
+    height: 70px;
+}
+
+.imgpix{
+    margin-left: -15%;
+    width: 70px;
+    filter: brightness(0) invert(1);
+}
+
+.paypal img{
+    margin-left: -35%;
+    width: 150px;
+    filter: brightness(0) invert(1);
+}
+
+.barcode{
+    position: absolute;
+    left: 30%;
+    bottom: 4%;
+    display: none;
+    width: 200px;
+    border: 2px solid white;
+    margin: 0;
+}
+
+.codpix:hover .barcode{
+    display: block;
+    left: -90%;
+} 
+
+#linksite{
+    color: rgb(137, 220, 137);
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif */
+    font-family: monospace;
+    font-size: 22px;
+}
+
+#aviso{
+    margin-top: 5rem;
+    text-align: center;
+    font-family: helvetica, arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    
+    display: none;
+}
+
+.card{
+    
+    /*
+        Só pela responsividade em celular e etc
+        Isso vai escolher a largura mínima entre
+        100%-36px (dá 18px de margem pra cada lado)
+        e 500px (largura MÁXIMA que isso vai ter)
+    */
+    /* width: min(calc(100% - 36px), 500px); */
+
+    /*
+        No MÍNIMO isso vai ocupar 100% da altura
+        da tela, mas, se precisar crescer verticalmente,
+        vai sem problemas
+    */
+    /* min-height: calc(100vh - 72px); */
+    width: 504px;
+    height: 792px;              /*centralizar (cima, lados, baixo) */
+    margin: 36px auto 36px; 
+
+    /* contabilizar a padding quando 
+    calcula o tamanho do elemento */
+    box-sizing: border-box;
+    
+    padding: 20px;
+
+    /* tudo abaixo é pra dar um tchan só */
+    border-radius: 5px;
+    background-image: url("images/lolla_celular.png");
+    background-position: center;    
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 10px #000;
+    color: white;
+    font-family: 'untitled1regular';
+}
+
+.card .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /*permite que a flexbox quebre linhas*/
+    align-items: center;
+    justify-content: center;
+    row-gap: 8px; /* Separa as linhas, não deixando grudar */
+    column-gap: 8px; /*separa as colunas, não deixando grudar tb */
+    margin: 50% auto;
+    /* width: 88%; */
+    width: 408px;
+    font-size: 25px;
+    text-transform: lowercase;
+
+}
+
+.card .content span {
+    margin-top: 10px;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-transform: lowercase;
+}
+
+/* .card .content span::after{
+    z-index: 0;
+    color: orange;
+} */
+
+.escondida .content .featured-artists{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 8px; 
+    column-gap: 8px;
+    min-width: 100%;
+}
+.escondida .content .featured-artists span {
+    text-transform: lowercase;
+    font-size: 35px;
+    line-height: 39px;
+}
+
+.card .content .featured-artists {
+    /*
+        Uma flexbox exatamente igual à anterior, mas com
+        100% de width. Isso garante que os artistas em destaque
+        vão ou estar na mesma linha ou que cada um vai ter sua própria.
+    */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 8px; 
+    column-gap: 8px;
+    min-width: 100%;
+}
+
+.card .content .featured-artists span{
+    text-transform: lowercase;
+
+    font-size: 35px;
+    line-height: 39px;
+}
+
+.escondida{
+    width: 504px;
+    height: 792px;             
+    margin: 36px auto 36px;  /*centralizar (cima, lados, baixo) */
+    /* display: none; */
+    /* contabilizar a padding quando 
+    calcula o tamanho do elemento */
+    box-sizing: border-box;
+    /* position: absolute; */
+    
+    padding: 20px;
+
+    border-radius: 5px;
+    background-image: url("images/lolla_celular.png");
+    background-position: center;    
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 10px #000;
+    color: white;
+    font-family: 'untitled1regular';
+}
+
+.escondida .content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /*permite que a flexbox quebre linhas*/
+    align-items: center;
+    justify-content: center;
+    row-gap: 8px; /* Separa as linhas, não deixando grudar */
+    column-gap: 8px; /*separa as colunas, não deixando grudar tb */
+    margin: 50% auto;
+    width: 88%;
+    font-size: 25px;
+    text-transform: lowercase;
+}
+
+#bolinhaid, #i2, #i3, #i4, #i5, #i6, #i7, #i8, #i9, #i10, #i11, #i12, #i13, #i14, #i15, #i16, #i17, #i18{
+    margin-top: 10px;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-transform: lowercase;
+}
+
+#tamanho{
+    display: none;
+}
+
+#loading{
+    margin: -10px;
+    min-width: 100vw;
+    max-width: 100vw;
+    min-height: 400vw;
+    max-height: 1000vw;
+    background-image: url("images/loading.png");
+    background-size: 100%;
+    color: white;
+    font-family: helvetica, arial, sans-serif;
+    margin-top: 80px;
+    text-align: center;
+}
+
+#loading h1{
+    font-family: helvetica, arial, sans-serif;
+    font-size: 80px;
+}
+
+#loading h2{
+    font-family: helvetica, arial, sans-serif;
+    font-size: 35px;
+}
+
+#text_loading{
+    font-size: 100px;
+}
+
+@media (max-width: 1024px) {
+    body{
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+}
+
+#loading{
+    background-repeat: no-repeat;
+    background-size: auto;
+}
