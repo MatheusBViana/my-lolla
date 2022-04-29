@@ -1,4 +1,4 @@
-function bolinhas(){
+function add_lines(){
     let size = document.getElementById("tamanho").innerHTML;
     size = parseInt(size);
 
