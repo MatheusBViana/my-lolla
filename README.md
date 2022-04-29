@@ -1,12 +1,6 @@
-# Spotify Accounts Authentication Examples
+# My Lolla - Lineup Generator
 
-This project contains basic demos showing the different OAuth 2.0 flows for [authenticating against the Spotify Web API](https://developer.spotify.com/web-api/authorization-guide/).
-
-These examples cover:
-
-* Authorization Code flow
-* Client Credentials flow
-* Implicit Grant flow
+This project uses Spotify API with Node.js to generate a Lollapalooza lineup with the most listened artists of the user. The user can print or download the lineup and share on your social medias.
 
 ## Installation
 
@@ -29,7 +23,7 @@ Once you have created your app, replace the `client_id`, `redirect_uri` and `cli
 ## Running the examples
 In order to run the different examples, open the folder with the name of the flow you want to try out, and run its `app.js` file. For instance, to run the Authorization Code example do:
 
-    $ cd authorization_code
+    $ cd authorization_code/public
     $ node app.js
 
 Then, open `http://localhost:8888` in a browser.
