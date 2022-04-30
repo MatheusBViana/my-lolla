@@ -1,9 +1,12 @@
-function add_lines(){
+function bolinhas(){
     let size = document.getElementById("tamanho").innerHTML;
     size = parseInt(size);
 
     if (size < 5){
         document.getElementById("aviso").style.display = "block";
+        document.getElementById("referencia").style.display = "none";
+        document.getElementById("loading").style.display = "none";
+
     }else{
         
         let linha1 = 0;
