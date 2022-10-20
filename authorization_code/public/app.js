@@ -84,7 +84,6 @@ app.get('/callback', function(req, res) {
       }
     });
 
-  console.log(meu_token);
   if (state === null || state !== storedState) {
     res.redirect('/#' +
       querystring.stringify({
